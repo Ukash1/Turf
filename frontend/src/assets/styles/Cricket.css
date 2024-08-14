@@ -1,0 +1,113 @@
+/* .App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.rating {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #218838;
+} */
+
+
+.App {
+    text-align: center;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px; /* Reduced gap between grid items */
+    padding: 200px; /* Reduced padding for the grid */
+    background-color: #313131;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px; /* Reduced padding inside each card */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #ddd;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h2 {
+    font-size: 1.2em; /* Reduced font size */
+  }
+  
+  .product-card p {
+    font-size: 1em; /* Reduced font size */
+    color: #888;
+  }
+  
+  .product-card .rating {
+    margin: 5px 0; /* Reduced margin for rating */
+  }
+  
+  .product-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Reduced padding for the button */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+  .product-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  .co{
+    color:gold;
+  }
+  

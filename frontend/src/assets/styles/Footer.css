@@ -1,0 +1,68 @@
+.footer {
+    background: #e0f7e9; /* Light green background */
+    color: #801f5e; /* Dark grey text */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 10px 20px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #92215b; /* Dark green for logo */
+  }
+  
+  .logo-text span {
+    color: #c61983; /* Dark grey for 'It' */
+  }
+  
+  .contact span {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .footer-section.links ul {
+    list-style: none;
+  }
+  
+  .footer-section.links ul a {
+    text-decoration: none;
+    color: #980874; /* Dark green for links */
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .footer-section.links ul a:hover {
+    color: #830f4f; /* Darker green on hover */
+  }
+  
+  .social-links a {
+    color: #98085a; /* Dark green for social media icons */
+    margin: 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .social-links a:hover {
+    color: #8b156c; /* Darker green on hover */
+  }
+  
+  .footer-bottom {
+    background: #cce4d6; /* Slightly darker green */
+    color: #b02193; /* Dark grey text */
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+  .ol{
+    color:#b02193;
+  }

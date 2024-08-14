@@ -1,0 +1,106 @@
+/* Container for the About Us section */
+.about-us-container {
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Heading style */
+.about-us-container h1 {
+    margin-bottom: 40px;
+}
+
+/* Container for each section (Mission/Vision) */
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add space between text and image */
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-in-out;
+    padding: 20px; /* Optional: Adds padding inside the container */
+}
+
+/* Text container with alignment adjustments */
+.text-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* Image container with additional padding/margin for blank space */
+.image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 50px; /* This can be adjusted based on your layout needs */
+    margin-left: 50px;  /* Add space to the left to create a blank space */
+}
+
+/* Image style with hover effect */
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    margin-left:100px;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Specific animation for the Mission image */
+.mission-image {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Specific animation for the Vision image */
+.vision-image {
+    animation: slideInRight 1s ease-in-out;
+}
+
+/* Animation for section fade-in */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for sliding in from the left */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for sliding in from the right */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

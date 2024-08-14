@@ -1,0 +1,200 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+.home {
+  font-family: Arial, sans-serif;
+  padding: 50px;
+  background-color: #1e1d1d; /* Light grey background */
+  color: #333333; /* Dark grey text color */
+}
+
+/* Hero Container Styles */
+.hero-container {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  justify-content: center; /* Center content vertically */
+  text-align: left; /* Align text to the left */
+  padding: 120px;
+  background-image: url('../images/ok.avif'); /* Set your background image here */
+  background-size: cover; /* Ensure the image covers the container */
+  background-position: center; /* Center the background image */
+  color: rgb(247, 244, 244); /* White text color for contrast */
+  border-radius: 10px; /* Optional: rounded corners for the container */
+  margin-bottom: 20px; /* Space below the container */
+  max-width: 100%; /* Ensure it doesn’t overflow */
+}
+
+.hero-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 120px;
+  margin-top:10vh;
+}
+
+.hero-container p.slogan {
+  font-size: 1.75rem; /* Increased font size for slogan */
+  font-weight: bold;
+  margin: 100px; /* Remove default margins */
+  color:rgb(253, 251, 251);
+}
+
+/* Description Styles */
+.home p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px auto; /* Center horizontally with bottom margin */
+  color: #716e6e; /* Medium grey color for description text */
+  padding-left: 20px; /* Add left padding to align with the text */
+  text-align: left; /* Ensure text alignment is to the left */
+}
+
+/* Description Container Styles */
+.des {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; /* Space between description and buttons */
+  margin-top: 50px;
+ }
+
+.des p {
+  flex: 1; 
+  margin: 0;
+  font-family: 'Roboto' sans-serif;
+  font-weight: lighter;
+  
+} 
+
+/* Home Buttons Styles */
+.home-buttons {
+  display: flex; /* Use Flexbox for horizontal alignment */
+  justify-content: flex-start; /* Align buttons to the start (left) */
+  gap: 40px; /* Space between buttons */
+  margin-top: 20px;
+  margin-right: 200px;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #020236; /* Green background for buttons */
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.home-button:hover {
+  background-color: #760651; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home {
+      padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .hero-container h1 {
+      font-size: 2rem;
+  }
+
+  .hero-container p.slogan {
+      font-size: 1.5rem; /* Adjusted size for smaller screens */
+  }
+
+  .home p {
+      font-size: 1rem;
+  }
+
+  .home h2.section-title {
+      font-size: 1.5rem; /* Adjusted size for smaller screens */
+  }
+
+  .home p.section-description {
+      font-size: 1rem; /* Adjusted size for smaller screens */
+  }
+
+  .home-button {
+      font-size: 1rem; /* Adjusted button size for smaller screens */
+      padding: 4px 16px;
+  }
+}
+.submitwaste-section {
+  padding: 20px;
+  background-color: #0a0a0a;
+  border-top: 1px solid #f4f0f0;
+}
+
+.submitwaste-section h2 {
+  margin-top: 0;
+}
+.cv {
+  font-family: 'Arial', sans-serif; /* Change to desired font family */
+  font-size: 3rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Or use other weights like 'normal', '300', '700', etc. */
+  color: rgba(255,255,255,0.9); /* White color for the text */
+  text-align: center;
+  margin: 0;
+  position: relative; /* Required for pseudo-element positioning */
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  margin-top: 80px;
+}
+
+.cv::after {
+  content: ''; /* Adds an empty pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffcc00; /* Underline color */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease; /* Smooth transition for underline effect */
+}
+
+.cv:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cv:hover {
+  color: #ffcc00; 
+  font-weight: 700; 
+}
+.cx {
+  font-family: 'Arial', sans-serif; /* Change to desired font family */
+  font-size: 30px; /* Adjust the font size as needed */
+  font-weight: bold; /* Or use other weights like 'normal', '300', '700', etc. */
+  color: rgba(255,255,255,0.9); /* White color for the text */
+  text-align: center;
+  margin: 0;
+  position: relative; /* Required for pseudo-element positioning */
+  transition: color 0.3s ease, font-weight 0.3s ease;
+ 
+}
+.cx::after {
+  content: ''; /* Adds an empty pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffcc00; /* Underline color */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease; /* Smooth transition for underline effect */
+}
+
+.cx:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cx:hover {
+  color: #ffcc00; 
+  font-weight: 700; 
+}
+.xx{
+  font-size:50px;
+}
